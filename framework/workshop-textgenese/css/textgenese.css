@@ -1,0 +1,309 @@
+/* Visualisierung von Textgenese in der Autor-Ansicht von Oxygen */
+/* Formatierungen erfolgen per CSS */
+
+
+
+/*Metadaten: <teiHeader> */
+teiHeader {
+    display: block;
+    border:2px solid black;
+    padding:1em;
+    margin-bottom:3em;
+}
+
+/*Positionierungsangaben zum <titel> im <teiHeader> */
+titleStmt {
+    display:block;
+    text-align:center;
+}
+
+/* Titel */
+titleStmt title {
+    display:block;
+    font-size:30px;
+    font-weight:bold;
+    margin-top:1em;
+    margin-bottom:2em;
+}
+
+/* Autor */
+author {
+    display:block;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* Koordinaten der Zeilen aus Transkribus werden ausgeblendet */
+facsimile {
+    display:none;
+}
+
+
+/* Herausgeber */
+editor {
+    display:block;
+    font-size:24px;
+}
+
+/* Text vor dem 1. Herausgeber */
+editor:first-of-type::before {
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size:20px;
+    /* Hier den Text: */
+    content:"herausgegeben von ";
+    display:block;    
+}
+
+respStmt {
+    display:block;
+}
+
+resp{
+    margin-top:1em;
+    font-size:20px;
+    display:block;
+    margin-bottom:1em;
+}
+
+respStmt persName {
+    display:block;
+    font-size:24px;
+}
+
+/*Angaben zur Veröffentlichung*/
+publicationStmt {
+    display:block;
+    margin-top:3em;
+    text-align:center;
+}
+
+/* Beschreibung des Materials */
+sourceDesc::before {
+    margin-top:3em;
+    display:block;
+    text-align:center;
+    content:"Materialbeschreibung:";
+    margin-bottom:1em;
+    text-decoration:underline;
+}
+
+sourceDesc {
+    display:block;
+    
+}
+
+encodingDesc {
+    display:block;
+}
+
+/* Projektinformationen – Überschrift */
+projectDesc::before {
+    margin-top:3em;
+    display:block;
+    text-align:center;
+    content:"Informationen zum Projekt:";
+    margin-bottom:1em;
+    text-decoration:underline;
+}
+
+projectDesc {
+    display:block;
+}
+
+
+profileDesc {
+    display:block;
+}
+
+/* Textgenese – Überschrift */
+creation:before {
+    margin-top:3em;
+    display:block;
+    text-align:center;
+    content:"Textgenese:";
+    margin-bottom:1em;
+    font-weight:bold;
+}
+
+/* Textzustände – Überschrift */
+creation listChange::before {
+    margin-top:1em;
+    display:block;
+    text-align:center;
+    content:"Textzustände/Textstufen:";
+    margin-bottom:1em;
+    text-decoration:underline;
+}
+
+/* Schreiberhände – Überschrift */
+handNotes::before {
+ margin-top:1em;
+    display:block;
+    text-align:center;
+    content:"Schreiberhände:";
+    margin-bottom:1em;
+    text-decoration:underline;   
+}
+
+/* beteiligte/genannte ... Personen – Überschrift */
+particDesc::before {
+    margin-top:3em;
+    display:block;
+    text-align:center;
+    content:"Personen:";
+    margin-bottom:1em;
+    font-weight:bold;   
+}
+
+/* Personeneintrag */
+person {
+    display:block;
+}
+
+/* Changelog der Datei */
+revisionDesc::before {
+    margin-top:3em;
+    display:block;
+    text-align:center;
+    content:"Änderungen an der Datei:";
+    margin-bottom:1em;
+    font-weight:bold; 
+}
+
+/* Überarbeitungsschritt der Datei */
+revisionDesc change {
+    display:list-item;
+    margin-left:2em;
+}
+
+/*Angaben zum Bearbeiter @who und zum Zeitpunkt der Änderung @when */
+revisionDesc change::after {
+    display:inline;
+    content:" " attr('when') " (" attr('who') ")";
+}
+
+
+/* Transkription */
+
+/* Überschrift vor Transkriptionsteil */
+sourceDoc:first-of-type::before {
+    display:block;
+    text-align:center;
+    content:"Transkription(en)";
+    font-size:30px;
+    font-weight:bold;
+    margin-top:1em;
+    margin-bottom:0.5em;
+}
+
+/* Blatt/transkribierte Seite */
+surface {
+    display:block;
+    border:2px solid orange;
+    padding:1em;
+}
+
+/* id des Blattes */
+surface::before {
+    text-align:right;
+    color:orange;
+    display:block;
+    content:attr('xml:id');
+}
+
+/* Textstufen */
+
+/* Jedes Element mit einem @change-Attribut */
+
+[change] {
+    background-color:#FFF0F5;
+}
+
+/* Immer, wenn ein Element ein @change-Attribut hat, 
+Information zur Textstufe nachstellen*/
+[change]::after {
+    display:inline;
+    vertical-align:super;
+    font-size:smaller;
+    content:attr('change');
+    color:blue;
+}
+
+
+/* Zeile */
+
+/*id usw. könnte man davorschreiben line::before {} */
+
+line {
+    display:block;
+    margin:0.5em;
+    border:1px dotted gray;
+    padding:0.5em;
+}
+
+
+/* Modifikationen */
+/* kenntlich gemacht über Schriftfarbe;
+wenn Hintergrund gewünscht ist: background-color:yellow;
+*/
+
+/* Hinzufügung */
+add {
+    color:green;
+}
+
+/* Tilgung */
+del {
+    color:red;
+}
+
+/* gestrichener Text */
+del[rend=strikethrough] {
+    text-decoration:line-through;
+}
+/*weitere @rend*/
+
+/*Unsichere Entzifferung*/
+unclear::before {
+    display: inline;
+    content: "\2370";
+    color:black;
+    background-color:yellow;
+}
+
+unclear {
+    background-color:yellow;
+}
+
+unclear::after {
+    display: inline;
+    content: "\2370";
+    color:black;
+    background-color:yellow;
+}
+
+
+/*Nicht transkribierte Stelle*/
+gap {
+    display: inline;
+    content: "\25CC";
+    font-weight: bold;
+    font-size:30px;
+    color:red;
+}
+
+
+/*Blockstreichung*/
+
+delSpan {
+  display: inline;
+  content: "\2326";
+  color: red;  
+}
+
+anchor[type=delEnd] {
+   display: inline;
+   content: "\232B";
+   color:red;
+}
