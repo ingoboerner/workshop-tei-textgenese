@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Test</title>
+                <author>
+                    <persName>Max Mustermann</persName>
+                </author>
+                <!--weitere Autoren-->
+                <editor>
+                    <persName>Ingo Börner</persName>
+                </editor>
+                <respStmt>
+                    <resp>erstellt unter Anleitung von</resp>
+                    <persName>Stefano Apostolo</persName>
+                    <persName>Ingo Börner</persName>
+                    <persName>Angelika Hechtl</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>unveröffentlicht.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <!--Beschreibung des Materials, sehr ausführlich: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html-->
+                    <msIdentifier/>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Erstellt im Rahmen des Workshops <title>TEI-Encoding von Textgenese</title> am
+                        <date when="2017-05-12+02:00">12. Mai 2017</date>.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <creation>
+                <!--Informationen zur Textgenese-->
+                <listChange>
+                    <!--Textzustände/Textstufen-->
+                    <change><!--Textzustand-->
+                        <!--xml:id vergeben, übrige Attribute beachten-->
+                    </change>
+                    <!--Weitere Textstufen-->
+                </listChange>
+            </creation>
+            <handNotes>
+                <!--Schreiberhände-->
+                <handNote><!--Hier die Informationen zur Schreiberhand; beschreibend-->
+                    <!--xml:id vergeben, übrige Attribute beachten: Schreiber, Schreibmedium, ... --></handNote>
+            </handNotes>
+            <particDesc>
+                <!--Kontextinformationen: z.B. an der Entstehung beteiligte und/oder im Text erwähnte Personen-->
+                <listPerson>
+                    <person/>
+                </listPerson>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <!--Änderungen an der Datei (nicht Textgenese)-->
+            <change when="2017-05-12T06:57:07.057+02:00">Transformation per XSLT
+                transkribus-export_2_Textgenese-TEI.xsl</change>
+            <change when="2017-05-12">Rohtranskription mit Transkribus</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile xml:id="facs_5">
+        <surface ulx="0" uly="0" lrx="3507" lry="2480">
+            <graphic url="482065.jpg" width="3507px" height="2480px"/>
+            <zone points="198,175 1826,175 1826,2198 198,2198" rendition="TextRegion"
+                xml:id="facs_5_region_1494499492047_29">
+                <zone
+                    points="1114,221 1159,213 1232,202 1265,197 1273,247 1239,252 1167,262 1123,270"
+                    rendition="Line" xml:id="facs_5_line_1494499503451_30"/>
+                <zone points="306,271 1367,271 1371,382 310,382" rendition="Line"
+                    xml:id="facs_5_line_1494499509489_31"/>
+                <zone points="312,401 1272,407 1274,471 314,465" rendition="Line"
+                    xml:id="facs_5_line_1494499532359_33"/>
+                <zone points="1316,379 1619,382 1625,459 1319,467" rendition="Line"
+                    xml:id="facs_5_line_1494499536805_34"/>
+                <zone points="316,469 1400,472 1394,556 310,553" rendition="Line"
+                    xml:id="facs_5_line_1494499541142_35"/>
+                <zone points="257,600 1246,607 1246,657 243,677" rendition="Line"
+                    xml:id="facs_5_line_1494499545588_36"/>
+                <zone points="308,718 1285,716 1285,766 308,768" rendition="Line"
+                    xml:id="facs_5_line_1494499549535_37"/>
+                <zone points="310,823 1696,821 1696,871 310,873" rendition="Line"
+                    xml:id="facs_5_line_1494499556493_38"/>
+                <zone points="312,927 1567,926 1567,976 312,977" rendition="Line"
+                    xml:id="facs_5_line_1494499562311_39"/>
+                <zone points="298,1007 1552,1003 1554,1090 304,1098" rendition="Line"
+                    xml:id="facs_5_line_1494499565978_40"/>
+                <zone points="309,1138 1391,1135 1391,1185 309,1188" rendition="Line"
+                    xml:id="facs_5_line_1494499569441_41"/>
+                <zone points="310,1242 1361,1244 1361,1294 310,1292" rendition="Line"
+                    xml:id="facs_5_line_1494499573715_42"/>
+                <zone points="301,1333 1422,1333 1417,1398 307,1398" rendition="Line"
+                    xml:id="facs_5_line_1494499579331_43"/>
+                <zone points="274,1415 1607,1405 1585,1521 252,1531" rendition="Line"
+                    xml:id="facs_5_line_1494499588052_44"/>
+                <zone points="307,1557 1566,1556 1566,1606 307,1607" rendition="Line"
+                    xml:id="facs_5_line_1494499602887_46"/>
+                <zone points="307,1663 1523,1662 1523,1712 307,1713" rendition="Line"
+                    xml:id="facs_5_line_1494499607193_47"/>
+                <zone points="305,1741 1240,1741 1237,1819 302,1819" rendition="Line"
+                    xml:id="facs_5_line_1494499610126_48"/>
+                <zone points="303,1820 633,1848 801,1820 1698,1819 1700,1923 305,1924"
+                    rendition="Line" xml:id="facs_5_line_1494499626350_50"/>
+                <zone points="365,1929 651,1929 651,1987 365,1987" rendition="Line"
+                    xml:id="facs_5_line_1494501174410_54"/>
+                <zone points="311,1979 1637,1975 1637,2025 311,2029" rendition="Line"
+                    xml:id="facs_5_line_1494499631155_51"/>
+                <zone points="305,2080 1626,2078 1626,2128 305,2130" rendition="Line"
+                    xml:id="facs_5_line_1494499634696_52"/>
+            </zone>
+        </surface>
+    </facsimile>
+    <sourceDoc>
+        <surface xml:id="tr_05" facs="#facs_5">
+            <zone facs="#facs_5_region_1494499492047_29">
+                <line facs="#facs_5_line_1494499503451_30">
+                    <add>sehr</add>
+                </line>
+                <line facs="#facs_5_line_1494499509489_31">Klein <hi>Peterchen</hi> lernte
+                        <del>so</del> brav</line>
+                <line facs="#facs_5_line_1494499532359_33"><hi>des </hi>Vaters Namen war
+                        <hi>Gustav.</hi></line>
+                <line facs="#facs_5_line_1494499536805_34">
+                    <add>Gustàve</add>
+                </line>
+                <line facs="#facs_5_line_1494499541142_35">Zufrieden mit de<del>m</del><add>S</add>
+                    Zöglings Werk</line>
+                <line facs="#facs_5_line_1494499545588_36"><del>S</del><add change="#tz2">s</add>agt er sitzend zu
+                        ihm<add>:</add> merk</line>
+                <line facs="#facs_5_line_1494499549535_37">dir gut wie man das schreibt</line>
+                <line facs="#facs_5_line_1494499556493_38">und zieht den Strich bloß nicht so
+                    weit.</line>
+                <line facs="#facs_5_line_1494499562311_39">Die Schulbank drückend Peter
+                    lauscht</line>
+                <line facs="#facs_5_line_1494499565978_40"><del>E</del><add>e</add>r dem
+                        Lehrer<add>,</add> der schon aufgebraust.</line>
+                <line facs="#facs_5_line_1494499569441_41">Packt er den Peter bei der Hand</line>
+                <line facs="#facs_5_line_1494499573715_42">Zerrt ihn weg und oh du Schand</line>
+                <line facs="#facs_5_line_1494499579331_43">Rügt er ihn sehr im
+                        Nebenzimmer<add>:</add></line>
+                <line facs="#facs_5_line_1494499588052_44"><add>„</add><del>d</del><add>D</add>iesen
+                    Strich den zeihst du nimmer!<add>“</add></line>
+                <line facs="#facs_5_line_1494499602887_46">Gustav erscheint und hört
+                    verwundert</line>
+                <line facs="#facs_5_line_1494499607193_47">der Beschwerden über Peter
+                    hundert.</line>
+                <line facs="#facs_5_line_1494499610126_48">Ohne Ein<hi>is</hi>cht oder gar
+                    Reu,</line>
+                <line facs="#facs_5_line_1494499626350_50">bleibt Gustav
+                        <del>seiner</del><add>der</add> <unclear>Strichmeinung</unclear> treu</line>
+                <line facs="#facs_5_line_1494501174410_54">
+                    <gap/>
+                </line>
+                <line facs="#facs_5_line_1494499631155_51">Der Lehrer duldet diesen Umstand
+                    nicht</line>
+                <line facs="#facs_5_line_1494499634696_52">und verdrischt ihn - nicht im
+                    Gesicht.</line>
+            </zone>
+        </surface>
+
+    </sourceDoc>
+</TEI>

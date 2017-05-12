@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="16.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="16.1" xml:space="preserve">
+                <map>
+                    <entry>
+                        <String>code-templates</String>
+                        <codeTemplateItem-array>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/any</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;del rend="strikethrough">${selection}&lt;/del>${caret}</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>Gestrichener Text</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>Streichung</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/any</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;del rend="overwritten">${selection}&lt;/del>${caret}</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>Überschriebener Text</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>Überschreibung</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/xml</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;author>
+    &lt;persName>${selection}&lt;/persName>
+&lt;/author>${caret}</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>Umgibt den markierten Text mit dem Code für &lt;author></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>Autor</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/xml</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;editor>
+    &lt;persName>${selection}&lt;/persName>
+&lt;/editor>${caret}</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>Umgibt den markierten Text mit dem Code für &lt;editor></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>Herausgeber</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/xml</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;change xml:id="${ask('ID der Textstufe', input_type, '')}">${caret}&lt;/change></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>Eine Textstufe definieren</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>Textstufe</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </codeTemplateItem>
+                        </codeTemplateItem-array>
+                    </entry>
+                    <entry>
+                        <String>key.code.templates.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
+                    </entry>
+                </map>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="workshop-tei-textgenese.xpr">
+        <folder path="bsp/"/>
+        <folder path="data/"/>
+        <folder path="facs/"/>
+    </projectTree>
+</project>
